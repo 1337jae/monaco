@@ -12,7 +12,7 @@
 		
 		html,
 		body {
-			background-color: #080808;
+			background-color: #151515;
 			width: 100%;
 			height: 100%;
 			margin: 0;
@@ -26,7 +26,7 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            background-color: #080808;
+            background-color: #151515;
             padding: 8px 10px;
             border-bottom: 1px solid rgb(15, 15, 15);
             overflow-x: auto;
@@ -205,11 +205,11 @@
         function createTab() {
             var tab = document.createElement("div");
             tab.classList.add("tab");
-            tab.innerHTML = `<img src="https://cdn.discordapp.com/attachments/1341989483419144222/1345194101070626947/lua-1.png?ex=67c64c22&is=67c4faa2&hm=f794516ea5b90e7d18d04fa935a5122a4c602ebe6a530353b258db4eea940d55&" alt="Tab Icon"><span>Untitled ${tabCount}</span><button class="close-btn">x</button>`;
+            tab.innerHTML = `<img src="https://cdn.discordapp.com/attachments/1341989483419144222/1347732482421817367/Lua_language.webp?ex=67cce52f&is=67cb93af&hm=f2d8f36ac8bd02459cad0f62e40d2c6a5060e4cb77b7b81acc4c138f993d9391&" alt="Tab Icon"><span>Untitled ${tabCount}</span><button class="close-btn">x</button>`;
             tab.dataset.index = tabCount;
             document.getElementById("tabs-container").insertBefore(tab, document.getElementById("new-tab-btn"));
             tabs.push(tab);
-            tabData[tabCount] = "-- Hexagon";
+            tabData[tabCount] = "-- Scripts";
             selectTab(tab);
 
             tab.querySelector(".close-btn").addEventListener("click", function(event) {
